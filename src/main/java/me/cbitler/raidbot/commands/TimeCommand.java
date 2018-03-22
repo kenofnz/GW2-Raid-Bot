@@ -16,10 +16,14 @@ public class TimeCommand implements Command {
 	
 	static {
 		timezones.put("Los Angeles", ZoneId.of("America/Los_Angeles"));
-		timezones.put("New York", ZoneId.of("America/New_York"));
-		timezones.put("London", ZoneId.of("Europe/London"));
-		timezones.put("Jakarta", ZoneId.of("Asia/Jakarta"));
-		timezones.put("Kuala Lumpur", ZoneId.of("Asia/Kuala_Lumpur"));
+		timezones.put("New York", ZoneId.of("America/New_York")); //-5
+		timezones.put("Toronto", ZoneId.of("America/Toronto")); //-5
+		timezones.put("London", ZoneId.of("Europe/London")); //0
+		timezones.put("Kuala Lumpur", ZoneId.of("Asia/Kuala_Lumpur")); //+8
+		timezones.put("Perth", ZoneId.of("Australia/Perth")); //+08:00
+		timezones.put("Brisbane", ZoneId.of("Australia/Brisbane")); //+10
+		timezones.put("Sydney", ZoneId.of("Australia/Sydney"));//+10
+		timezones.put("Auckland", ZoneId.of("Pacific/Auckland")); //+12
 	}
 	
 
